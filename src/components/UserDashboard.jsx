@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-function UserDashboard() {
+function UserDashboard({ onLogout }) {
   return (
-    <div className="dashboard">
-      <h1>Welcome, User!</h1>
-      <p>This is your dashboard.</p>
+    <div>
+      <h2>Welcome, User!</h2>
+      <button onClick={onLogout}>Logout</button>
     </div>
   );
 }

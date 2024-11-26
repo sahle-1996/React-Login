@@ -1,10 +1,9 @@
-import React from 'react';
 
-function AdminDashboard() {
+function AdminDashboard({ onLogout }) {
   return (
-    <div className="dashboard">
-      <h1>Welcome, Admin!</h1>
-      <p>This is your admin dashboard.</p>
+    <div>
+      <h2>Welcome, Admin!</h2>
+      <button onClick={onLogout}>Logout</button>
     </div>
   );
 }

@@ -1,11 +1,7 @@
-import React from 'react';
+
 
 function ErrorMessage() {
-  return (
-    <div className="error">
-      <p>Invalid username or password. Please try again.</p>
-    </div>
-  );
+  return <p style={{ color: "red" }}>Login failed. Please try again.</p>;
 }
 
 export default ErrorMessage;
